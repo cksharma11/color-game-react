@@ -1,9 +1,6 @@
 import React from "react";
 import Box from "./Box";
-
-const getRandom = function(){
-  return Math.floor(Math.random() * 4);
-}
+import getRandom from "../util";
 
 export default class Board extends React.Component {
   render() {
@@ -24,7 +21,11 @@ export default class Board extends React.Component {
           <Box color={this.props.colors[2]} onClick={this.props.onClick} />
           <Box color={this.props.colors[3]} onClick={this.props.onClick} />
         </div>
-        <div id="score" className="text">
+        <div
+          id="score"
+          className="text"
+          style={{ color: this.props.score >= 0 ? "green" : "red" }}
+        >
           Score : {this.props.score}
         </div>
       </div>

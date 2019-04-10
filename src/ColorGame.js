@@ -1,6 +1,8 @@
 import React from "react";
 import Board from "./components/Board";
+import getRandom from "./util";
 import lodash from "lodash";
+
 
 export default class ColorGame extends React.Component {
   constructor(props) {
@@ -9,7 +11,7 @@ export default class ColorGame extends React.Component {
     this.score = 0;
     this.state = {
       score: this.score,
-      currentColor: this.colors[this.getRandomColorIndex()]
+      currentColor: this.colors[getRandom()]
     };
   }
 
@@ -40,11 +42,7 @@ export default class ColorGame extends React.Component {
     this.shuffleColors();
     this.setState({
       score: this.score,
-      currentColor: this.colors[this.getRandomColorIndex()]
+      currentColor: this.colors[getRandom()]
     });
-  }
-
-  getRandomColorIndex() {
-    return Math.floor(Math.random() * 4);
   }
 }
