@@ -1,5 +1,5 @@
 import React from "react";
-import Board from "./Board";
+import Board from "./components/Board";
 import lodash from "lodash";
 
 export default class ColorGame extends React.Component {

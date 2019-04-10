@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import ColorGame from "./components/ColorGame";
+import ColorGame from "./ColorGame";
 import "./index.css";
 
 const colors = ["red", "blue", "green", "yellow"];
