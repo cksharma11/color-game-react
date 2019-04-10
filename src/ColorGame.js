@@ -6,9 +6,9 @@ export default class ColorGame extends React.Component {
   constructor(props) {
     super(props);
     this.colors = props.colors;
-    this.points = 0;
+    this.score = 0;
     this.state = {
-      points: this.points,
+      score: this.score,
       currentColor: this.colors[this.getRandomColorIndex()]
     };
   }
@@ -22,7 +22,7 @@ export default class ColorGame extends React.Component {
       <Board
         colors={this.colors}
         currentColor={this.state.currentColor}
-        score={this.state.points}
+        score={this.state.score}
         onClick={this.updateScore.bind(this)}
       />
     );
@@ -30,8 +30,8 @@ export default class ColorGame extends React.Component {
 
   updateScore(event) {
     event.target.id === this.state.currentColor
-      ? (this.points = this.points + 10)
-      : (this.points = this.points - 10);
+      ? (this.score = this.score + 10)
+      : (this.score = this.score - 10);
 
     this.updateState();
   }
@@ -39,7 +39,7 @@ export default class ColorGame extends React.Component {
   updateState(){
     this.shuffleColors();
     this.setState({
-      points: this.points,
+      score: this.score,
       currentColor: this.colors[this.getRandomColorIndex()]
     });
   }
