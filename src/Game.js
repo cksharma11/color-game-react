@@ -4,7 +4,7 @@ import getRandom from "./util";
 import lodash from "lodash";
 
 
-export default class ColorGame extends React.Component {
+export default class Game extends React.Component {
   constructor(props) {
     super(props);
     this.colors = props.colors;
