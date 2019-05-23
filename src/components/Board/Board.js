@@ -1,6 +1,6 @@
 import React from "react";
-import Box from "./Box";
-import getRandom from "../util";
+import Box from "../Box/Box";
+import getRandom from "../../util";
 
 export default class Board extends React.Component {
   render() {

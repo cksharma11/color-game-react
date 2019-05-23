@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Board should render properly 1`] = `"<div className=\\"box\\" style={{...}} id={[undefined]} onClick={[Function: onClick]} />"`;
+
+exports[`Box should render properly 1`] = `"<div className=\\"box\\" style={{...}} id={[undefined]} onClick={[undefined]} />"`;
