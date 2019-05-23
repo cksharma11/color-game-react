@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Board should render properly 1`] = `
+"<div className=\\"board\\">
+  <div id=\\"current-color\\" className=\\"text\\" style={{...}} />
+  <div className=\\"row\\">
+    <Box color={[undefined]} onClick={[undefined]} />
+    <Box color={[undefined]} onClick={[undefined]} />
+  </div>
+  <div className=\\"row\\">
+    <Box color={[undefined]} onClick={[undefined]} />
+    <Box color={[undefined]} onClick={[undefined]} />
+  </div>
+  <div id=\\"score\\" className=\\"text\\" style={{...}}>
+    Score : 
+  </div>
+</div>"
+`;

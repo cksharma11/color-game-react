@@ -6,11 +6,10 @@ import Box from "../Box";
 configure({ adapter: new Adapter() });
 
 describe("Box", () => {
-  const colors = ["red", "blue", "green", "yellow"];
-
   it("should render properly", () => {
     const props = {
-      colors: colors,
+      color: "red",
+      onClick: () => {}
     };
 
     const wrapper = shallow(<Box {...props} />);
