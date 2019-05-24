@@ -3,7 +3,7 @@ import createContainer from "constate";
 import getRandom from "../util";
 import lodash from "lodash";
 
-const useGameContext = colors => {
+const useGameContext = ({ colors }) => {
   const [gameColors, setGameColors] = useState(colors);
   const [score, setScore] = useState(0);
   const [currentColor, setCurrentColor] = useState(colors[getRandom()]);
@@ -30,5 +30,5 @@ const useGameContext = colors => {
 };
 
 const GameContext = createContainer(useGameContext);
-
+export { useGameContext };
 export default GameContext;

@@ -6,7 +6,6 @@ import GameContext from "../../contexts/GameContext";
 const Board = () => {
   const gameContext = useContext(GameContext.Context);
   const { gameColors = {}, score, currentColor = "", gameScoreHandler } = gameContext;
-
   return (
     <div className="board">
       <div id="current-color" className="text" style={{ color: gameColors[getRandom()] }}>

@@ -12,3 +12,4 @@ describe("Board", () => {
     expect(wrapper.debug()).toMatchSnapshot();
   });
 });
+
